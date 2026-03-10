@@ -56,6 +56,7 @@ public class RegisterUser extends HttpServlet {
 			logic.execute(registerUser);
 			
 			// 不要となったセッションスコープ内のインスタンスを削除
+			// これをしないとセッションがタイムアウトになるまで残り続ける。
 			session.removeAttribute("registerUser");
 			
 			// 登録後のフォワード先を設定
