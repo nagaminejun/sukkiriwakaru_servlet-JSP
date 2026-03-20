@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" 
     pageEncoding="UTF-8" %>
+<!-- EL式を使う場合は以下のimportは不要 -->
 <%@ page import="model.Health" %>
 <%
 // リクエストスコープに保存されたHealthインスタンス（HealthCheckLogicで加工後）を取得
