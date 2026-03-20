@@ -14,10 +14,17 @@ Health health = (Health) request.getAttribute("health");
 <body>
 <h1>健康診断の結果</h1>
 <p>
+【】
 身長：<%= health.getHeight() %><br>
 体重：<%= health.getWeight() %><br>
 BMI：<%= health.getBmi() %><br>
 体格：<%= health.getBodyType() %>
+<br>
+【こちらはEL式記述方法】<br>
+身長：${health.height}<br>
+体重：${health.weight}<br>
+BMI：${health.height}<br>
+体格：${health.bmi}
 </p>
 <a href="HealthCheck">戻る</a>
 </body>
